@@ -1,0 +1,104 @@
+/* 设置整个文档的字体、外边距、内边距、背景颜色和文本颜色 */
+body {
+    font-family: Arial, sans-serif; /* 设置页面字体为Arial，后备字体为sans-serif */
+    margin: 0; /* 设置页面外边距为0 */
+    padding: 0; /* 设置页面内边距为0 */
+    background-color: #121212; /* 设置页面背景颜色为深灰色 */
+    color: #ffffff; /* 设置页面文本颜色为白色 */
+}
+
+/* 页眉布局：居中对齐和背景色 */
+header {
+    display: flex; /* 使用Flexbox布局，使子元素在水平方向上排列 */
+    align-items: center; /* 子元素在垂直方向上居中对齐 */
+    justify-content: space-between; /* 子元素在水平方向上分散对齐 */
+    padding: 10px 20px; /* 页眉的上下内边距为10px，左右内边距为20px */
+    font-size: 16px; /* 页眉的字体大小为16px */
+    background-color: #1c1c1c; /* 设置页眉背景颜色为深灰色 */
+    height: 35px !important; /* 强制设置页眉的高度为35px */
+}
+
+/* Logo样式 */
+.logo {
+    font-size: 24px; /* 设置Logo字体大小为24px */
+    font-weight: bold; /* 设置Logo字体为加粗 */
+}
+
+/* 导航链接样式 */
+.nav-links {
+    display: flex; /* 使用Flexbox布局，将导航链接水平排列 */
+    align-items: center; /* 垂直方向上居中对齐 */
+    padding: 5px 10px; /* 导航链接内边距为5px 10px */
+}
+
+/* 导航链接中的头像 */
+.nav-links a {
+    color: white; /* 设置链接字体颜色为白色 */
+    text-decoration: none; /* 去除链接的下划线 */
+    margin-left: 15px; /* 导航链接之间的左外边距为15px */
+}
+
+/* 主体内容区域 */
+main {
+    padding: 20px; /* 设置主体内容区域的内边距为20px */
+}
+
+/* 页脚样式 */
+footer {
+    position: fixed; /* 将页脚固定在页面底部 */
+    bottom: 0; /* 距离页面底部为0px */
+    left: 0; /* 距离页面左侧为0px */
+    width: 100%; /* 页脚宽度占据整个页面宽度 */
+    text-align: center; /* 将页脚的文本居中对齐 */
+    padding: 2px; /* 设置页脚的内边距为2px */
+    background-color: #1c1c1c; /* 设置页脚背景颜色为深灰色 */
+    color: white; /* 设置页脚文本颜色为白色 */
+    font-size: 14px; /* 设置页脚字体大小为14px */
+    margin-top: 200px;
+}
+
+#user-avatar {
+    width: 35px; /* 设置头像的宽度为35px */
+    height: 35px; /* 设置头像的高度为35px */
+    border-radius: 50%; /* 设置头像为圆形 */
+    object-fit: cover; /* 保持头像比例，并裁剪图片以适应头像的尺寸 */
+    margin: 0; /* 去除头像的外边距 */
+}
+
+.envelope-icon {
+    width: 24px; /* 设置上传视频图标的宽度为24px */
+    height: 24px; /* 设置上传视频图标的高度为24px */
+    margin-left: 15px; /* 设置图标与其他元素之间的左外边距为15px */
+    vertical-align: middle; /* 让图标与文字垂直居中对齐 */
+}
+
+/* 视频区域样式 */
+.video-section {
+    margin-bottom: 20px; /* 设置视频区域底部外边距为20px */
+    text-align: center; /* 将视频区域中的内容居中对齐 */
+}
+
+.video-container {
+    max-width: 1000px; /* 设置视频容器的最大宽度为1000px */
+    margin: 0 auto; /* 将视频容器水平居中 */
+    position: relative; /* 设置为相对定位，以便于对子元素进行绝对定位 */
+    height: 600px; /* 设置视频容器的高度为600px */
+}
+
+#movie-title {
+    font-size: 24px; /* 设置电影标题字体大小为24px */
+    font-weight: bold; /* 设置电影标题为加粗 */
+    margin-top: 10px; /* 设置电影标题顶部外边距为10px */
+}
+/* 电影简介样式 */
+/* 电影简介样式 */
+.movie-description {
+    margin-top: 5px; /* 设置电影简介的顶部外边距 */
+    text-align: center; /* 使电影简介文本居中对齐 */
+    font-size: 16px; /* 设置电影简介的字体大小 */
+    color: #cccccc; /* 设置电影简介的文本颜色为浅灰色 */
+    width: 80%; /* 设置电影简介的宽度为页面的80% */
+    margin-left: auto; /* 使简介容器在水平方向上居中 */
+    margin-right: auto; /* 使简介容器在水平方向上居中 */
+}
+

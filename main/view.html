@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8，支持中文字符 -->
+    <title>光影解说</title> <!-- 页面标题 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 使页面在移动设备上响应式显示 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> <!-- 引入Swiper轮播插件的CSS -->
+    <link rel="stylesheet" href="view.css"> <!-- 引入自定义的CSS样式 -->
+    <link rel="icon" href="Favicon.jpg" type="image/jpg"> <!-- 设置网页的favicon图标 -->
+</head>
+<body>
+<header>
+    <!-- 页眉部分 -->
+    <div class="logo">光影解说</div> <!-- 网站Logo -->
+    <nav class="nav-links">
+        <!-- 导航链接区域 -->
+        <a href="../index.html">首页</a> <!-- 首页链接 -->
+    </nav>
+</header>
+
+<main>
+    <!-- 主体内容部分 -->
+    <!-- 视频播放部分 -->
+    <section class="video-section">
+        <h2 id="movie-title">阿甘正传</h2> <!-- 显示电影名称 -->
+        <div class="video-container">
+            <!-- 视频容器，确保视频可响应式显示 -->
+            <video id="movie-video" controls width="100%">
+                <!-- 视频标签，设置controls属性显示播放控制 -->
+                <source src="Forrest_Gump.mp4" type="video/mp4"> <!-- 视频文件路径 -->
+                您的浏览器不支持 HTML5 视频标签。 <!-- 浏览器不支持视频时的提示信息 -->
+            </video>
+        </div>
+        <div class="movie-description">
+            <p>阿甘正传（Forrest Gump）是一部由罗伯特·泽米吉斯执导，汤姆·汉克斯主演的经典影片。<br></br>讲述了阿甘（Forrest Gump）的人生故事，虽然智商不高，但凭借着纯真、坚持和幸运，他经历了美国历史上一些重大事件，并在其中成为传奇人物。</p>
+        </div>
+        <br/>
+        <br/>
+        </section>
+
+
+</main>
+
+
+<!-- 页脚部分 -->
+<footer>
+    <!-- 页面底部信息 -->
+    <p>© 2024 光影解说. 保留所有权利.</p> <!-- 版权信息 -->
+</footer>
+<script src="view.js"></script>
+</body>
+</html>

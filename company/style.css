@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif; /* 设置字体为 Arial，如果未安装则使用 sans-serif 字体 */
+    margin: 0; /* 去除默认外边距 */
+    padding: 0; /* 去除默认内边距 */
+    background-color: #121212; /* 设置背景颜色为深灰色 */
+    color: #ffffff; /* 设置字体颜色为白色 */
+}
+
+/* 页眉布局：居中对齐和背景色 */
+header {
+    display: flex; /* 使用 Flexbox 布局，使子元素可以灵活排列 */
+    align-items: center; /* 垂直居中对齐子元素 */
+    justify-content: space-between; /* 左右对齐，空间均匀分配 */
+    padding: 10px 20px; /* 设置内边距，上下各10px，左右各20px */
+    font-size: 16px; /* 设置字体大小为 16px */
+    background-color: #1c1c1c; /* 设置页眉背景颜色为深灰色 */
+    height: 35px !important; /* 设置具体高度为 35px，使用 !important 确保该规则优先级 */
+}
+
+/* Logo样式 */
+.logo {
+    font-size: 24px; /* 设置字体大小为 24px */
+    font-weight: bold; /* 设置字体加粗 */
+}
+
+/* 导航链接样式 */
+.nav-links {
+    display: flex; /* 使用 Flexbox 布局排列导航链接 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 5px 10px; /* 设置内边距，上下各5px，左右各10px */
+}
+
+/* 导航链接中的头像 */
+.nav-links a {
+    color: white; /* 设置链接文本颜色为白色 */
+    text-decoration: none; /* 去除链接的下划线 */
+    margin-left: 15px; /* 左侧添加15px的外边距 */
+}
+
+.envelope-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+/* 主体内容区域 */
+main {
+    padding: 20px; /* 设置内边距为 20px */
+}
+/* 个人信息部分的样式 */
+.profile-section {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐子元素 */
+    justify-content: center; /* 水平居中对齐 */
+    flex-direction: column; /* 垂直排列 */
+    margin-top: 20px; /* 上方间距 */
+}
+
+/* 圆形图片样式 */
+.profile-image {
+    width: 150px; /* 设置图片宽度为 150px */
+    height: 120px; /* 设置图片高度为 150px */
+    margin-bottom: 10px; /* 图片下方间距 */
+}
+
+/* 模态框样式 */
+.modal {
+    display: none; /* 隐藏模态框 */
+    position: fixed; /* 固定定位 */
+    z-index: 1000; /* 确保在最上层 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 全宽 */
+    height: 100%; /* 全高 */
+    background-color: rgba(0, 0, 0, 0.9); /* 背景半透明 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.modal-content {
+    max-width: 90%; /* 最大宽度 */
+    max-height: 90%; /* 最大高度 */
+    display: block; /* 显示 */
+    margin: auto; /* 自动边距，确保居中 */
+}
+
+
+/* 关闭按钮样式 */
+.close {
+    position: absolute; /* 绝对定位 */
+    top: 15px; /* 距离顶部15px */
+    right: 35px; /* 距离右侧35px */
+    color: white; /* 颜色为白色 */
+    font-size: 40px; /* 字体大小 */
+    font-weight: bold; /* 加粗 */
+    cursor: pointer; /* 鼠标样式为手型 */
+}
+
+
+/* 个人信息框样式 */
+.profile-info {
+    display: flex;
+    flex-direction: column; /* 纵向排列标题和文本框 */
+    align-items: center; /* 使内容在水平方向上居中 */
+    margin-top: 5px; /* 调整顶部间距 */
+    max-width: 800px; /* 设置与横线一致的最大宽度 */
+    width: 100%; /* 确保宽度为100% */
+}
+/* 标题样式 */
+.profile-title {
+    font-size: 24px; /* 设置标题字体大小为 24px */
+    font-weight: bold; /* 加粗字体 */
+    color: #ffffff; /* 设置字体颜色为白色 */
+    margin: 0; /* 去掉默认外边距 */
+    position: relative; /* 为伪元素定位提供参考 */
+    padding: 0 20px; /* 为标题左右添加内边距，避免与横线重叠 */
+}
+
+/* 短横线样式 */
+.profile-title::before,
+.profile-title::after {
+    content: ""; /* 伪元素的内容为空 */
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直居中 */
+    width: 150px; /* 短横线的宽度 */
+    height: 2px; /* 短横线的高度 */
+    background-color: #ffffff; /* 短横线颜色为白色 */
+}
+
+/* 左侧短横线 */
+.profile-title::before {
+    right: 100%; /* 将左侧短横线放在标题左侧 */
+    margin-right: 10px; /* 短横线与标题之间的间距 */
+}
+
+/* 右侧短横线 */
+.profile-title::after {
+    left: 100%; /* 将右侧短横线放在标题右侧 */
+    margin-left: 10px; /* 短横线与标题之间的间距 */
+}
+.textbox-container {
+    display: flex;
+    align-items: flex-start; /* 左对齐 */
+    margin-top: 10px; /* 与其他内容的间距 */
+}
+
+.vertical-line {
+    width: 2px; /* 竖直短线宽度 */
+    height: 30px; /* 短线高度，与你的字体高度相等 */
+    background-color: #ffffff; /* 竖直短线颜色 */
+    margin-right: 10px; /* 短线与文本之间的间距 */
+    margin-top: -20px; /* 去掉上下间距 */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* 纵向排列 */
+}
+
+.introduction-title {
+    font-size: 20px; /* 设置标题字体大小 */
+    color: #ffffff; /* 设置字体颜色为白色 */
+    margin-top: -20px; /* 去掉上下间距 */
+    margin-bottom: 5px; /* 与文本框之间的下方间距 */
+}
+
+.profile-textbox {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    width: 800px; /* 设置为固定宽度 */
+    height: auto; /* 高度自动 */
+    overflow: hidden; /* 隐藏超出内容 */
+    margin-bottom: 5px; /* 保持正常的间距 */
+    box-sizing: border-box; /* 确保内边距包含在总宽度内 */
+}
+.profile-textbox2 {
+    font-size: 14px;
+    border: none;
+    margin-bottom: -5px;
+    background: transparent;
+    width: 800px; /* 设置为固定宽度 */
+    height: auto; /* 高度自动 */
+    overflow: hidden; /* 隐藏超出内容 */
+    box-sizing: border-box; /* 确保内边距包含在总宽度内 */
+}
+.profile-textbox3 {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    width: 800px; /* 设置为固定宽度 */
+    height: auto; /* 高度自动 */
+    overflow: hidden; /* 隐藏超出内容 */
+    margin-bottom: 5px; /* 保持正常的间距 */
+    margin-top: -20px;
+    box-sizing: border-box; /* 确保内边距包含在总宽度内 */
+}
+
+
+/* 短横线样式 */
+.horizontal-line {
+    height: 2px; /* 横线高度 */
+    background-color: #ffffff; /* 横线颜色 */
+    width: 100%; /* 横线宽度与容器一致 */
+    margin-bottom: 35px; /* 下方间距 */
+    max-width: 800px; /* 设置最大宽度，保持一致 */
+}
+.horizontal-line2 {
+    height: 2px; /* 横线高度 */
+    background-color: #ffffff; /* 横线颜色 */
+    width: 100%; /* 横线宽度与容器一致 */
+    margin-bottom: 35px; /* 下方间距 */
+    max-width: 800px; /* 设置最大宽度，保持一致 */
+    margin-top: 18px;
+}
+
+.fixed-title {
+    font-size: 20px; /* 设置标题字体大小 */
+    color: #ffffff; /* 设置字体颜色为白色 */
+    margin-top: -20px; /* 去掉上下间距 */
+    margin-bottom: 5px; /* 与文本框之间的下方间距 */
+}
+
+/* 短横线样式 */
+.fixed-title::before,
+.fixed-title::after {
+    content: ""; /* 伪元素的内容为空 */
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直居中 */
+    width: 150px; /* 短横线的宽度 */
+    height: 2px; /* 短横线的高度 */
+    background-color: #ffffff; /* 短横线颜色为白色 */
+}
+
+/* 左侧短横线 */
+.fixed-title::before {
+    right: 100%; /* 将左侧短横线放在标题左侧 */
+    margin-right: 10px; /* 短横线与标题之间的间距 */
+}
+
+/* 右侧短横线 */
+.fixed-title::after {
+    left: 100%; /* 将右侧短横线放在标题右侧 */
+    margin-left: 10px; /* 短横线与标题之间的间距 */
+}
+.image-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 水平分配空间 */
+    margin-top: 10px; /* 上方间距 */
+}
+
+.image {
+    width: 200px; /* 设置宽度 */
+    height: 200px; /* 设置高度 */
+    object-fit: cover; /* 保持比例，裁剪内容以适应盒子 */
+}
+/* 每个图片和描述组合的容器样式 */
+.image-with-description {
+    margin-bottom: 20px; /* 图片组合之间的间距 */
+    text-align: center; /* 文本居中 */
+}
+/* 图片介绍样式 */
+.image-description {
+    font-size: 14px; /* 字体大小 */
+    color: #ffffff; /* 字体颜色 */
+    text-align: center; /* 文本居中 */
+    margin-top: -20px; /* 与图片之间的间距 */
+}
+
+.people-photo {
+    width: 200px; /* 设置宽度 */
+    height: 200px; /* 设置高度 */
+    object-fit: cover; /* 保持比例，裁剪内容以适应盒子 */
+    margin-bottom: 30px;
+}
+
+/* 电影列表样式 */
+.movie-list {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中对齐 */
+    gap: 0.5px; /* 设置电影卡片之间的间隙为 20px */
+}
+
+/* 电影卡片样式 */
+.movie-card {
+    background-color: #121212; /* 设置背景颜色为深灰色 */
+    border-radius: 5px; /* 设置圆角边框 */
+    margin: 10px; /* 设置外边距为 10px */
+    text-align: center; /* 设置文本居中 */
+    width: 140px; /* 设置宽度为 140px */
+    overflow: hidden; /* 超出内容隐藏 */
+}
+
+/* 电影卡片中的图片样式 */
+.movie-card img {
+    width: 100%; /* 图片宽度占据100% */
+    height: 200px;
+    object-fit: cover; /* 保持比例，裁剪内容以适应盒子 */
+    border-radius: 5px 5px 0 0; /* 只设置上方圆角 */
+}
+
+/* 电影名称样式 */
+.movie-card h4 {
+    margin: 10px 0; /* 设置上下外边距 */
+    font-size: 16px; /* 设置字体大小 */
+    color: #fff; /* 字体颜色为白色 */
+}
+
+
+/* 页脚样式 */
+footer {
+    text-align: center; /* 设置文本居中 */
+    padding: 10px; /* 设置内边距 */
+    background-color: #1c1c1c; /* 设置背景颜色 */
+}
+
+
+/* 用户头像样式 */
+#user-avatar {
+    width: 35px; /* 设置头像宽度为 35px */
+    height: 35px; /* 设置头像高度为 35px */
+    border-radius: 50%; /* 设置为圆形头像 */
+    object-fit: cover; /* 保持头像比例 */
+    margin: 0; /* 去除外边距 */
+}
+
+/* 邮件图标样式 */
+.envelope-icon {
+    width: 24px; /* 设置邮件图标宽度为 24px */
+    height: 24px; /* 设置邮件图标高度为 24px */
+    margin-left: 15px; /* 左侧添加 15px 的外边距 */
+    vertical-align: middle; /* 垂直对齐中间 */
+}

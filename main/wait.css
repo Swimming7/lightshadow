@@ -1,0 +1,100 @@
+/* 设置整个文档的字体、外边距、内边距、背景颜色和文本颜色 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* 页眉布局：居中对齐和背景色 */
+header {
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 左右对齐 */
+    padding: 10px 20px; /* 设置内边距 */
+    font-size: 16px; /* 设置字体大小 */
+    background-color: #1c1c1c; /* 设置页眉背景颜色 */
+    height: 35px !important; /* 设置具体高度 */
+}
+
+/* Logo样式 */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 导航链接样式 */
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+/* 导航链接中的头像 */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* 主体内容区域 */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    text-align: center;
+}
+/* 电影列表样式 */
+.movie-list {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    padding: 0 20px;
+    gap: 20px; /* 电影卡片之间的间隙 */
+}
+
+.movie-card {
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* 页脚样式 */
+footer {
+    position: fixed; /* 固定在页面底部 */
+    bottom: 0; /* 距离底部0px */
+    left: 0; /* 距离左边0px */
+    width: 100%; /* 占据整个页面宽度 */
+    text-align: center; /* 设置文本居中 */
+    padding: 2px; /* 将内边距设置为5px以缩小高度 */
+    background-color: #1c1c1c; /* 设置背景颜色为深灰色 */
+    color: white; /* 设置字体颜色为白色 */
+    font-size: 14px; /* 可以适当缩小字体大小 */
+}
+
+#user-avatar {
+    width: 35px; /* 设置头像宽度 */
+    height: 35px; /* 设置头像高度 */
+    border-radius: 50%; /* 设置圆形头像 */
+    object-fit: cover; /* 保持头像比例 */
+    margin: 0; /* 去除外边距 */
+}
+
+.envelope-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    vertical-align: middle;
+}

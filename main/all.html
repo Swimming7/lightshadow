@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- 设置字符编码为 UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- 网页标题 -->
+
+    <!-- 设置视口，使网页在不同设备上响应式显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 引入外部 CSS 文件 -->
+    <link rel="stylesheet" href="all.css"> <!-- 直接引用同目录下的 action.css 文件 -->
+    <!-- 设置 favicon -->
+    <link rel="icon" href="Favicon.jpg" type="image/jpg">
+    <!-- 引入外部 Swiper 样式，用于幻灯片效果 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+<!-- 页头部分 -->
+<header>
+    <!-- 网站 logo -->
+    <div class="logo">光影解说</div>
+
+    <!-- 导航菜单 -->
+    <nav class="nav-links">
+
+        <!-- 导航链接 -->
+        <a href="../index.html">首页</a>
+
+    </nav>
+</header>
+
+<!-- 推荐电影部分 -->
+<section class="recommended-movies">
+    <!-- 部分标题 -->
+
+    <!-- 标签选择部分 -->
+    <div class="container">
+        <div class="left-column">
+            <div class="vertical-line"></div> <!-- 添加竖线 -->
+            <div class="title2">选择标签</div>
+            <div class="tags">
+                <table class="tag-table">
+                    <tr>
+                        <td><div class="tag-label">风格</div></td>
+                        <td>
+                            <button type="button" class="tag-button" data-category="style" data-tag="全部类型">全部类型</button>
+                            <button type="button" class="tag-button" data-category="style" data-tag="动作">动作</button>
+                            <button type="button" class="tag-button" data-category="style" data-tag="喜剧">喜剧</button>
+                            <button type="button" class="tag-button" data-category="style" data-tag="恐怖">恐怖</button>
+                            <button type="button" class="tag-button" data-category="style" data-tag="爱情">爱情</button>
+                            <button type="button" class="tag-button" data-category="style" data-tag="科幻" id="dalu-btn1">科幻</button>
+                            <button type="button" class="tag-button" data-category="style" data-tag="剧情"id="dalu-btn2">剧情</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="tag-label">地区</div></td>
+                        <td>
+                            <button type="button" class="tag-button" data-category="region" data-tag="全部地区">全部地区</button>
+                            <button type="button" class="tag-button" data-category="region" data-tag="大陆" id="dalu-btn3">大陆</button>
+                            <button type="button" class="tag-button" data-category="region" data-tag="港台">港台</button>
+                            <button type="button" class="tag-button" data-category="region" data-tag="欧美" id="dalu-btn4">欧美</button>
+                            <button type="button" class="tag-button" data-category="region" data-tag="日本">日本</button>
+                            <button type="button" class="tag-button" data-category="region" data-tag="韩国">韩国</button>
+                            <button type="button" class="tag-button" data-category="region" data-tag="印度">印度</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="tag-label">导演</div></td>
+                        <td>
+                            <button type="button" class="tag-button" data-category="director" data-tag="全部导演">全部导演</button>
+                            <button type="button" class="tag-button" data-category="director" data-tag="张艺谋" id="dalu-btn5">张艺谋</button>
+                            <button type="button" class="tag-button" data-category="director" data-tag="宫崎骏">宫崎骏</button>
+                            <button type="button" class="tag-button" data-category="director" data-tag="史蒂文·斯皮尔伯格">史蒂文·斯皮尔伯格</button>
+                            <button type="button" class="tag-button" data-category="director" data-tag="詹姆斯卡梅隆">詹姆斯卡梅隆</button>
+                            <button type="button" class="tag-button" data-category="director" data-tag="彼得·杰克逊">彼得·杰克逊</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="tag-label">演员</div></td>
+                        <td>
+
+                            <button type="button" class="tag-button" data-category="crew" data-tag="全部演员">全部演员</button>
+                            <button type="button" class="tag-button" data-category="crew" data-tag="周星驰">周星驰</button>
+                            <button type="button" class="tag-button" data-category="crew" data-tag="巩俐">巩俐</button>
+                            <button type="button" class="tag-button" data-category="crew" data-tag="莱昂纳多·迪卡普里奥" id="dalu-btn6">莱昂纳多·迪卡普里奥</button>
+                            <button type="button" class="tag-button" data-category="crew" data-tag="玛格特·罗比" id="dalu-btn7">玛格特·罗比</button>
+                            <button type="button" class="tag-button" data-category="crew" data-tag="杰森·斯坦森">杰森·斯坦森</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="tag-label">编剧</div></td>
+                        <td>
+                            <button type="button" class="tag-button" data-category="writer" data-tag="全部编剧">全部编剧</button>
+                            <button type="button" class="tag-button" data-category="writer" data-tag="冯小刚" >冯小刚</button>
+                            <button type="button" class="tag-button" data-category="writer" data-tag="陈凯歌">陈凯歌</button>
+                            <button type="button" class="tag-button" data-category="writer" data-tag="吕克·贝松">吕克·贝松</button>
+                            <button type="button" class="tag-button" data-category="writer" data-tag="克里斯托弗·诺兰">克里斯托弗·诺兰</button>
+                            <button type="button" class="tag-button" data-category="writer" data-tag="史蒂文·斯皮尔伯格">史蒂文·斯皮尔伯格</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="tag-label">出品公司</div></td>
+                        <td>
+                            <button type="button" class="tag-button" data-category="company" data-tag="全部公司">全部公司</button>
+                            <button type="button" class="tag-button" data-category="company" data-tag="北京电影制片厂">北京电影制片厂</button>
+                            <button type="button" class="tag-button" data-category="company" data-tag="迪士尼" id="dalu-btn8">迪士尼</button>
+                            <button type="button" class="tag-button" data-category="company" data-tag="华纳兄弟娱乐公司">华纳兄弟娱乐公司</button>
+                            <button type="button" class="tag-button" data-category="company" data-tag="二十世纪福克斯电影公司">二十世纪福克斯电影公司</button>
+                            <button type="button" class="tag-button" data-category="company" data-tag="漫威漫画公司">漫威漫画公司</button>
+                        </td>
+                    </tr>
+
+                    <script>
+                        document.getElementById('dalu-btn1').addEventListener('click', function() {
+                            window.location.href = '../classify/sci-fi.html';  // 跳转到科幻页面
+                        });
+                        document.getElementById('dalu-btn2').addEventListener('click', function() {
+                            window.location.href = '../classify/drama.html';  // 跳转到剧情页面
+                        });
+                        document.getElementById('dalu-btn3').addEventListener('click', function() {
+                            window.location.href = '../region/continent.html';  // 跳转到大陆页面
+                        });
+                        document.getElementById('dalu-btn4').addEventListener('click', function() {
+                            window.location.href = '../region/Western countries.html';  // 跳转到欧美页面
+                        });
+                        document.getElementById('dalu-btn5').addEventListener('click', function() {
+                            window.location.href = '../people/zhangyimou.html';  // 跳转到张艺谋页面
+                        });
+                        document.getElementById('dalu-btn6').addEventListener('click', function() {
+                            window.location.href = '../people/xiaolizi.html';  // 跳转到小李子页面
+                        });
+                        document.getElementById('dalu-btn7').addEventListener('click', function() {
+                            window.location.href = '../people/magete.html';  // 跳转到玛格特罗比页面
+                        });
+                        document.getElementById('dalu-btn8').addEventListener('click', function() {
+                            window.location.href = '../company/dishini.html';  // 跳转到迪士尼页面
+                        });
+                    </script>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 电影列表 -->
+    <div class="movie-list">
+        <!-- 电影卡片 1 -->
+        <div class="movie-card">
+            <a onclick="window.location.href='view.html?movie=1'">
+                <img src="aganzhengzhuan.jpg" alt="agznzhengzhuan">
+                <div class="movie-title">阿甘正传</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/aobenhaimo.webp" alt="aobenhaimo">
+                <div class="movie-title">奥本海默</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/juedoushi.webp" alt="juedoushi">
+                <div class="movie-title">角斗士</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/yonggandexin.jpg" alt="yonggandexin">
+                <div class="movie-title">勇敢的心</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../images/taitannikehao.png" alt="taitannikehao">
+                <div class="movie-title">泰坦尼克号</div>
+            </a>
+        </div>
+        <!-- 电影卡片 2 -->
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="Swimming.png" alt="Swimming">
+                <div class="movie-title">一直游到海水变蓝</div>
+            </a>
+        </div>
+
+        <!-- 电影卡片 3 -->
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="Chinchilla.png" alt="Chinchilla">
+                <div class="movie-title">龙猫</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="shaqiu.jpg" alt="shaqiu">
+                <div class="movie-title">沙丘</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="yinruchenyan.jpg" alt="yinruchenyan">
+                <div class="movie-title">隐入尘烟</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="The_Shawshank_Redemption.png" alt="The_Shawshank_Redemption">
+                <div class="movie-title">肖申克的救赎</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../images/afanda.png" alt="afanda">
+                <div class="movie-title">阿凡达</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/jinlingshisanchai.webp" alt="jinlingshisanchai">
+                <div class="movie-title">金陵十三钗</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/xunmenghuanyouji.webp" alt="xunmenghuanyouji">
+                <div class="movie-title">寻梦环游记</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/honggaoliang.webp" alt="honggaoliang">
+                <div class="movie-title">红高粱</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/qiujudaguansi.webp" alt="qiujudaguansi">
+                <div class="movie-title">秋菊打官司</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/guilai.webp" alt="guilai">
+                <div class="movie-title">归来</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/fengkuangdongwucheng.webp" alt="fengkuangdongwucheng">
+                <div class="movie-title">疯狂动物城</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/qiyiboshi.webp" alt="qiyiboshi">
+                <div class="movie-title">奇异博士</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/zhongguonvpai.webp" alt="zhongguonvpai">
+                <div class="movie-title">中国女排</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../images/daomengkongjian.png" alt="daomengkongjian">
+                <div class="movie-title">盗梦空间</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/maoshuyouxi.webp" alt="maoshuyouxi">
+                <div class="movie-title">猫鼠游戏</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/huangyelieren.webp" alt="huangyelieren">
+                <div class="movie-title">荒野猎人</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/meinvyuyeshou.webp" alt="meinvyuyeshou">
+                <div class="movie-title">美女与野兽</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/xuanyazhishang.webp" alt="xuanyazhishang">
+                <div class="movie-title">悬崖之上</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/huaerjiezhilang.webp" alt="huaerjiezhilang">
+                <div class="movie-title">华尔街之狼</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/shikonglianlvren.webp" alt="shikonglianlvren">
+                <div class="movie-title">时空恋旅人</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/wohewodezuguo.webp" alt="wohewodezuguo">
+                <div class="movie-title">我和我的祖国</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../images/xingjichuanyue.png" alt="xingjichuanyue">
+                <div class="movie-title">星际穿越</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/huoxingjiuyuan.webp" alt="huoxingjiuyuan">
+                <div class="movie-title">火星救援</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/diershitiao.webp" alt="diershitiao">
+                <div class="movie-title">第二十条</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/changjinhu.webp" alt="changjinhu">
+                <div class="movie-title">长津湖</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/babi.webp" alt="babi">
+                <div class="movie-title">芭比</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/zishaxiaodui.webp" alt="zishaxiaodui">
+                <div class="movie-title">自杀小队</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../people/picture/wohuayangnvwang.webp" alt="wohuayangnvwang">
+                <div class="movie-title">我，花样女王</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/haiyangqiyuan.webp" alt="haiyangqiyuan">
+                <div class="movie-title">海洋奇缘</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/duye.webp" alt="duye">
+                <div class="movie-title">毒液</div>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/bingxueqiyuan2.webp" alt="bingxueqiyuan2">
+                <div class="movie-title">冰雪奇缘2</div>
+            </a>
+        </div>
+
+        <div class="movie-card">
+            <a href="wait.html">
+                <img src="../company/picture/fuchouzhelianmeng.webp" alt="fuchouzhelianmeng">
+                <div class="movie-title">复仇者联盟</div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- 页脚部分 -->
+<footer>
+    <!-- 页脚文字，版权声明 -->
+    <p>© 2024 光影解说. 保留所有权利.</p>
+</footer>
+</body>
+</html>

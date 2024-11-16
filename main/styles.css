@@ -1,0 +1,348 @@
+/* 设置整个文档的字体、外边距、内边距、背景颜色和文本颜色 */
+body {
+    font-family: Arial, sans-serif; /* 设置字体为Arial */
+    margin: 0; /* 去除外边距 */
+    padding: 0; /* 去除内边距 */
+    background-color: #121212; /* 设置背景颜色为深色 */
+    color: #ffffff; /* 设置文本颜色为白色 */
+}
+
+/* 页眉布局：居中对齐和背景色 */
+header {
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 左右对齐 */
+    padding: 5px 20px; /* 设置内边距 */
+    font-size: 16px; /* 设置字体大小 */
+    background-color: #1c1c1c; /* 设置页眉背景颜色 */
+    height: 45px !important; /* 设置具体高度 */
+}
+
+/* Logo样式 */
+.logo {
+    font-size: 24px; /* 设置Logo字体大小 */
+    font-weight: bold; /* 设置Logo字体加粗 */
+}
+
+/* 导航链接样式 */
+.nav-links {
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 5px 10px; /* 设置内边距 */
+}
+.nav-links a {
+    color: white; /* 设置链接文本颜色为白色 */
+    text-decoration: none; /* 去除链接下划线 */
+    margin-left: 15px; /* 设置链接之间的间隙 */
+}
+
+/* 主体内容区域 */
+main {
+    padding: 20px; /* 设置主体内容的内边距 */
+}
+
+/* 二级标题样式 */
+h2 {
+    margin: 20px; /* 上、下、左、右边距都为20像素 */
+}
+
+/* 搜索框样式 */
+
+.search-input {
+    background-color: #1c1c1c; /* 设置背景颜色与状态栏一致 */
+    color: white; /* 设置文本颜色为白色 */
+    border: 1px solid white; /* 设置白色边框 */
+    border-radius: 20px; /* 设置圆角边框 */
+    padding: 10px; /* 设置内边距 */
+    position: relative; /* 设置相对定位 */
+    top: -9px; /* 上移5px */
+    margin-top: 0; /* 去掉原本的 margin-top */
+}
+
+
+/* 搜索按钮样式 */
+.search-button {
+    background-color: #1c1c1c; /* 设置按钮背景颜色与状态栏一致 */
+    border: none; /* 去掉按钮边框 */
+    color: white; /* 设置按钮文本颜色为白色 */
+    cursor: pointer; /* 设置鼠标悬停样式 */
+    border-radius: 50%; /* 设置圆形按钮 */
+    padding: 10px; /* 设置内边距 */
+    position: relative; /* 设置相对定位 */
+    top: -9px; /* 将按钮上移10px */
+}
+/* 表单布局 */
+form {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 垂直排列 */
+}
+label {
+    margin-top: 10px; /* 设置标签顶部间隙 */
+}
+input[type="text"],
+input[type="file"] {
+    margin-top: 5px; /* 设置输入框顶部间隙 */
+    padding: 8px; /* 设置内边距 */
+    width: 300px; /* 设置宽度 */
+}
+
+/* 按钮样式 */
+button {
+    margin-top: 15px; /* 设置按钮上方间隙 */
+    padding: 10px; /* 设置按钮内边距 */
+    background-color: #007bff; /* 设置按钮背景颜色 */
+    color: white; /* 设置按钮文本颜色 */
+    border: none; /* 去掉按钮边框 */
+    border-radius: 5px; /* 设置圆角边框 */
+    cursor: pointer; /* 设置鼠标悬停样式 */
+}
+button:hover {
+    background-color: #0056b3; /* 鼠标悬停时按钮颜色变化 */
+}
+
+/* 分类部分：布局和间隙调整 */
+.category-section {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 垂直对齐到顶部 */
+    margin: 0 !important; /* 去除外边距 */
+    padding: 0; /* 去除内边距 */
+    flex-wrap: wrap; /* 支持换行 */
+}
+.category-filter {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: space-between; /* 左右对齐 */
+    margin: 0; /* 去除外边距 */
+    padding: 0; /* 去除内边距 */
+}
+.category {
+    flex: 1; /* 自动伸展 */
+    max-width: 200px; /* 设置最大宽度 */
+    margin: 0 10px; /* 设置左右间隙 */
+    text-align: center; /* 设置文本居中 */
+    padding: 0 10px; /* 设置左右内边距 */
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平居中对齐 */
+}
+.category h3 {
+    margin-bottom: 5px; /* 设置标题底部间隙 */
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: center; /* 水平居中对齐 */
+}
+
+/* 全部链接样式 */
+.all-link {
+    font-size: 14px; /* 设置链接字体大小 */
+    margin-left: 5px; /* 设置左侧间隙 */
+    color: #ffffff; /* 设置字体颜色 */
+    text-decoration: none; /* 去除下划线 */
+}
+.all-link:hover {
+    color: #0097a7; /* 鼠标悬停时链接颜色变化 */
+}
+
+/* 按钮组样式：两行布局 */
+.button-group {
+    display: flex; /* 使用Flexbox布局 */
+    flex-wrap: wrap; /* 支持换行 */
+    justify-content: center; /* 水平居中 */
+    max-width: 300px; /* 设置最大宽度 */
+    margin: 0 auto 10px; /* 设置上下间隙 */
+}
+.button-group a {
+    margin: 0 !important; /* 去除链接外边距 */
+}
+.button-group button {
+    flex-basis: 45%; /* 设置每个按钮的宽度为父容器的45% */
+    padding: 10px 15px; /* 设置按钮内边距 */
+    margin: 5px; /* 设置按钮间隙 */
+    background-color: transparent; /* 设置按钮背景透明 */
+    border: none; /* 去掉按钮边框 */
+    color: white; /* 设置文本颜色为白色 */
+    font-size: 16px; /* 设置字体大小 */
+    cursor: pointer; /* 设置鼠标悬停样式 */
+    border-radius: 5px; /* 设置按钮圆角 */
+}
+.button-group button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* 鼠标悬停时按钮背景颜色变化 */
+}
+
+/* 电影推荐部分 */
+.recommended-movies {
+    position: relative; /* 设置相对定位 */
+    margin-top: 70px; /* 设置顶部间隙 */
+}
+.recommended-movies h2 {
+    position: absolute; /* 设置绝对定位 */
+    top: -40px; /* 调整此值来将字样向上移动 */
+    left: 280px; /* 距离左侧250px */
+    font-size: 24px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体加粗 */
+    color: #ffffff; /* 设置字体颜色为白色 */
+}
+
+/* 电影列表样式 */
+.movie-list {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    padding: 0 20px; /* 设置左右内边距 */
+}
+.movie-card {
+    background-color: #1c1c1c; /* 设置电影卡片背景颜色 */
+    border-radius: 5px; /* 设置圆角 */
+    margin: 35px 20px 20px; /* 设置上边距为20px，左右和下边距为10px */
+    text-align: center; /* 设置文本居中 */
+    width: 200px; /* 设置卡片宽度 */
+    height: 300px; /* 设置卡片高度 */
+    overflow: hidden; /* 隐藏溢出部分 */
+}
+.movie-card img {
+    width: 100%; /* 设置图片宽度为100% */
+    height: 100%; /* 设置图片高度为100% */
+    object-fit: cover; /* 保持比例并裁剪图片 */
+    border-radius: 5px; /* 设置图片圆角 */
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center; /* 设置文本居中 */
+    padding: 10px; /* 设置内边距 */
+    background-color: #1c1c1c; /* 设置背景颜色 */
+}
+
+/* Swiper样式 */
+.swiper {
+    width: 800px; /* 设置Swiper宽度 */
+    height: 450px; /* 设置Swiper高度 */
+    margin: 20px auto; /* 设置上下外边距 */
+}
+
+.swiper-slide img {
+    width: 100%; /* 设置图片宽度为100% */
+    height: 100%; /* 设置图片高度为100% */
+    object-fit: contain; /* 保持比例并完整展示图片 */
+    border-radius: 5px; /* 设置图片圆角 */
+}
+
+.swiper-slide {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: #111111; /* 设置背景颜色 */
+    border-radius: 5px; /* 设置圆角 */
+    color: #ffffff; /* 设置字体颜色为白色 */
+    font-size: 24px; /* 设置字体大小 */
+}
+
+/* 信封图标 */
+.envelope-icon {
+    width: 24px; /* 设置图标宽度 */
+    height: 24px; /* 设置图标高度 */
+    margin-left: 15px; /* 设置左侧间隙 */
+    vertical-align: middle; /* 垂直对齐 */
+}
+
+/* 用户中心 */
+.user-center {
+    text-align: center; /* 设置文本居中 */
+}
+#user-avatar {
+     width: 35px; /* 设置头像宽度 */
+     height: 35px; /* 设置头像高度 */
+     border-radius: 50%; /* 设置圆形头像 */
+     object-fit: cover; /* 保持头像比例 */
+     margin: 0; /* 去除外边距 */
+ }
+
+/* 表单组 */
+.user-form {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平居中对齐 */
+}
+.form-group {
+    width: 100%; /* 设置宽度为100% */
+    max-width: 400px; /* 设置最大宽度 */
+    margin: 10px 0; /* 设置上下间隙 */
+    text-align: left; /* 设置文本左对齐 */
+}
+.form-group label {
+    display: block; /* 设置标签为块级元素 */
+    margin-bottom: 5px; /* 设置底部间隙 */
+    font-size: 14px; /* 设置字体大小 */
+}
+
+/* 修改信息 */
+.modify-info {
+    margin-top: 20px; /* 设置顶部间隙 */
+}
+.modify-text {
+    font-size: 20px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体加粗 */
+    color: #00bcd4; /* 设置字体颜色 */
+    cursor: pointer; /* 设置鼠标悬停样式 */
+    transition: color 0.3s; /* 设置颜色变化过渡效果 */
+}
+.modify-text:hover {
+    color: #0097a7; /* 鼠标悬停时字体颜色变化 */
+}
+
+/* 分类表格 */
+.category-table {
+    width: 60%; /* 设置表格宽度 */
+    margin: 0 auto; /* 水平居中对齐 */
+    border-collapse: collapse; /* 去除表格单元格间隙 */
+    border: 2px solid #121212; /* 设置表格外边框颜色与背景色一致 */
+    background-color: #121212; /* 设置表格背景色与页面背景色一致 */
+}
+
+/* 表格单元格 */
+.category-table td {
+    padding: 5px; /* 设置单元格内边距 */
+    border: 1px solid #121212 !important; /* 设置单元格边框颜色 */
+    background-color: #121212; /* 设置单元格背景色 */
+    color: white; /* 设置单元格文本颜色 */
+    text-align: left; /* 设置单元格文本左对齐 */
+    width: calc(80% / 12); /* 根据列数均分宽度 */
+}
+
+/* 表头单元格样式 */
+.category-table tr:first-child td {
+    font-size: 18px; /* 设置表头字体大小 */
+    text-align: left; /* 设置表头文本左对齐 */
+    padding: 10px; /* 设置表头单元格内边距 */
+    color: #ffffff; /* 设置表头文本颜色 */
+}
+
+/* 内边框样式 */
+.category-row td {
+    border: 1px solid; /* 设置内边框 */
+    font-size: 14px; /* 设置字体大小 */
+}
+
+/* 缩小特定单元格宽度 */
+.category-row td.narrow-cell {
+    width: 20px; /* 设置单元格宽度 */
+}
+
+.narrow-cell {
+    width: 10px; /* 设置单元格宽度 */
+}
+
+/* 分类操作按钮 */
+.category-row button {
+    all: unset; /* 重置按钮的默认样式 */
+    cursor: pointer; /* 添加鼠标指针样式 */
+    display: block; /* 使按钮占满整个单元格 */
+    width: 100%; /* 使按钮宽度为100% */
+    text-align: center; /* 文本居中 */
+    background-color: transparent; /* 设置背景透明 */
+    color: white; /* 设置字体颜色为白色 */
+}
+
+/* 点击按钮时的样式 */
+.category-row button:active {
+    background-color: rgba(173, 216, 230, 0.7); /* 点击时显示的颜色 */
+}
