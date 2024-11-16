@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="zh"> <!-- 设置文档语言为中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8，支持多语言字符 -->
+    <title>出品公司</title> <!-- 设置页面标题 -->
+    <link rel="stylesheet" href="style.css"> <!-- 引入外部CSS样式表 -->
+    <!-- 设置 favicon -->
+    <link rel="icon" href="../main/Favicon.jpg" type="image/jpg">
+</head>
+<body>
+<header>
+    <div class="logo">光影解说</div> <!-- 网站的Logo -->
+    <nav class="nav-links"> <!-- 导航链接区域 -->
+        <a href="../index.html">首页</a> <!-- 导航链接到首页 -->
+    </nav>
+</header>
+<h2 class="carousel-title">影视公司</h2> <!-- 页面主标题，指示当前展示的内容为“演员” -->
+<div class="carousel"> <!-- 轮播容器 -->
+    <a class="carousel-control prev" role="button">&#10094;</a> <!-- 左侧控制按钮，用于切换到上一张图片 -->
+    <div class="carousel-inner"> <!-- 轮播内部区域，包含所有轮播项 -->
+        <div class="item" data-url="">
+            <img src="picture/menggongchang.jpg" alt="Image 1">
+            <div class="name">梦工厂</div>
+            <div class="big-name">Warner Bros</div>
+        </div>
+        <div class="item" data-url=".">
+            <img src="../company/picture/DC.webp" alt="Image 2">
+            <div class="name">华纳兄弟娱乐公司</div>
+            <div class="big-name">Warner Bros</div>
+        </div>
+        <div class="item active" data-url="../company/dishini.html">
+            <img src="picture/dishini.jpg" alt="Image 3">
+            <div class="name">迪士尼</div>
+            <div class="big-name">The Walt Disney Company</div>
+        </div>
+        <div class="item" data-url="">
+            <img src="picture/manwei.jpg" alt="Image 4">
+            <div class="name">漫威</div>
+            <div class="big-name">Marvel Comics</div>
+        </div>
+        <div class="item" data-url="">
+            <img src="picture/fukesi.jpg" alt="Image 5">
+            <div class="name">二十世纪福克斯电影公司</div>
+            <div class="big-name">20th Century Fox Film Corporation</div>
+        </div>
+    </div>
+    <a class="carousel-control next" role="button">&#10095;</a> <!-- 右侧控制按钮，用于切换到下一张图片 -->
+</div>
+<script src="JavaScript.js"></script> <!-- 引入外部JavaScript文件 -->
+</body>
+</html>

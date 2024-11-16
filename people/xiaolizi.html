@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>莱昂纳多·迪卡普里奥</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- 设置 favicon -->
+    <link rel="icon" href="../main/Favicon.jpg" type="image/jpg">
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+<!-- 页头部分 -->
+<header>
+    <div class="logo">光影解说</div>
+    <nav class="nav-links">
+        <a href="../index.html">首页</a>
+    </nav>
+</header>
+
+<div class="profile-section">
+    <img class="profile-image" src="picture/xiaolizi.png" alt="莱昂纳多·迪卡普里奥">
+    <div class="profile-info">
+        <h2 class="profile-title">莱昂纳多·迪卡普里奥</h2>
+            <p class="role-description" style="margin-bottom: 8px;">Leonardo DiCaprio</p>
+            <p class="role-description" style="margin-top: 0;">男演员&nbsp/&nbsp制作人</p>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">影人介绍</h3>
+            <p class="profile-textbox">莱昂纳多·迪卡普里奥（Leonardo DiCaprio），1974年11月11日出生于美国加利福尼亚州洛杉矶，美国影视男演员、制作人。</p>
+            <div class="horizontal-line"></div>
+        </div>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">影人图片</h3>
+            <div class="image-container">
+                <img src="picture/xiaolizi1.webp"  class="people-photo" onclick="openModal(this)">
+                <img src="picture/xiaolizi2.webp"  class="people-photo" onclick="openModal(this)">
+                <img src="picture/xiaolizi3.webp"  class="people-photo" onclick="openModal(this)">
+                <img src="picture/xiaollizi4.webp"  class="people-photo" onclick="openModal(this)">
+            </div>
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">获奖情况</h3>
+            <p class="profile-textbox2">2020年  &nbsp&nbsp&nbsp&nbsp&nbsp   第92届奥斯卡金像奖 &nbsp&nbsp&nbsp&nbsp&nbsp    最佳男主角   &nbsp&nbsp&nbsp&nbsp&nbsp  《好莱坞往事》</p>
+            <p class="profile-textbox2">2016年   &nbsp&nbsp&nbsp&nbsp&nbsp  第88届奥斯卡金像奖  &nbsp&nbsp&nbsp&nbsp&nbsp   最佳男主角 &nbsp&nbsp&nbsp&nbsp&nbsp    《荒野猎人》</p>
+            <p class="profile-textbox2">2014年   &nbsp&nbsp&nbsp&nbsp&nbsp  第86届奥斯卡金像奖 &nbsp&nbsp&nbsp&nbsp&nbsp   最佳男主角     &nbsp&nbsp&nbsp&nbsp&nbsp 《华尔街之狼》</p>
+            <div class="horizontal-line2"></div>
+        </div>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">高分佳作</h3>
+            <div class="movie-list">
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="../images/taitannikehao.png" alt="泰坦尼克号">
+                    <h4>泰坦尼克号</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="../images/daomengkongjian.png" alt="盗梦空间">
+                    <h4>盗梦空间</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/maoshuyouxi.webp" alt="猫鼠游戏">
+                    <h4>猫鼠游戏</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/huangyelieren.webp" alt="荒野猎人">
+                    <h4>荒野猎人</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/huaerjiezhilang.webp" alt="华尔街之狼">
+                    <h4>华尔街之狼</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 页脚部分 -->
+<footer>
+    <p>© 2024 光影解说. 保留所有权利.</p>
+</footer>
+</body>
+</html>

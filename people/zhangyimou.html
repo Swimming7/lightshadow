@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>张艺谋</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- 设置 favicon -->
+    <link rel="icon" href="../main/Favicon.jpg" type="image/jpg">
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+<!-- 页头部分 -->
+<header>
+    <div class="logo">光影解说</div>
+    <nav class="nav-links">
+        <a href="../index.html">首页</a>
+    </nav>
+</header>
+
+<div class="profile-section">
+    <img class="profile-image" src="picture/zhangyimou.webp" alt="张艺谋">
+    <div class="profile-info">
+        <h2 class="profile-title">张艺谋</h2>
+        <p class="role-description">导演&nbsp/&nbsp编剧&nbsp/&nbsp制片人</p>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">影人介绍</h3>
+            <p class="profile-textbox">张艺谋，1950年4月2日出生于陕西西安，中国电影导演、编剧，“第五代导演”代表人物之一，美国波士顿大学、耶鲁大学荣誉博士，北京电影学院特聘教授。</p>
+            <div class="horizontal-line"></div>
+        </div>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">影人图片</h3>
+            <div class="image-container">
+                <img src="picture/zhangyimou1.webp"  class="people-photo" onclick="openModal(this)">
+                <img src="picture/zhangyimou2.webp"  class="people-photo" onclick="openModal(this)">
+                <img src="picture/zhangyimou3.webp"  class="people-photo" onclick="openModal(this)">
+                <img src="picture/zhangyimou4.webp"  class="people-photo" onclick="openModal(this)">
+            </div>
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">获奖情况</h3>
+            <p class="profile-textbox2">2024年  &nbsp&nbsp&nbsp&nbsp&nbsp   第19届中国长春电影节金鹿奖 &nbsp&nbsp&nbsp&nbsp&nbsp    最佳导演奖   &nbsp&nbsp&nbsp&nbsp&nbsp  《第二十条》</p>
+            <p class="profile-textbox2">2024年   &nbsp&nbsp&nbsp&nbsp&nbsp  中国电影导演协会  &nbsp&nbsp&nbsp&nbsp&nbsp   2021年度导演 &nbsp&nbsp&nbsp&nbsp&nbsp    《悬崖之上》</p>
+            <p class="profile-textbox2">2021年   &nbsp&nbsp&nbsp&nbsp&nbsp  第15届亚洲电影大奖  &nbsp&nbsp&nbsp&nbsp&nbsp   最佳导演奖    &nbsp&nbsp&nbsp&nbsp&nbsp 《一秒钟》</p>
+            <div class="horizontal-line2"></div>
+        </div>
+    </div>
+    <div class="textbox-container">
+        <div class="vertical-line"></div>
+        <div class="text-content">
+            <h3 class="introduction-title">高分佳作</h3>
+            <div class="movie-list">
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/diershitiao.webp" alt="第二十条">
+                    <h4>第二十条</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/honggaoliang.webp" alt="红高粱">
+                    <h4>红高粱</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/qiujudaguansi.webp" alt="秋菊打官司">
+                    <h4>秋菊打官司</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/jinlingshisanchai.webp" alt="金陵十三钗">
+                    <h4>金陵十三钗</h4>
+                </div>
+                <div class="movie-card" onclick="window.location.href='../main/wait.html'">
+                    <img src="picture/xuanyazhishang.webp" alt="悬崖之上">
+                    <h4>悬崖之上</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 页脚部分 -->
+<footer>
+    <p>© 2024 光影解说. 保留所有权利.</p>
+</footer>
+</body>
+</html>

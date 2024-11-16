@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>光影解说</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main/styles.css">
+    <!-- 设置 favicon -->
+    <link rel="icon" href="film/main/Favicon.jpg" type="image/jpg">
+</head>
+<body>
+<header>
+    <div class="logo">光影解说</div>
+
+    <nav class="nav-links">
+        <a href="index.html">首页</a>
+    </nav>
+</header>
+
+<main>
+    <section class="image-carousel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a onclick="window.location.href='main/view.html?movie=1'">
+                        <img src="main/Forrest_Gump.jpg" alt="阿甘正传">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="main/wait.html">
+                        <img src="main/Return_to_Dust.jpg" alt="隐入尘烟">
+                    </a>
+                </div>
+
+                <!-- 第三张海报，点击跳转到 wait.html -->
+                <div class="swiper-slide">
+                    <a href="main/wait.html">
+                        <img src="main/Dune.jpg" alt="沙丘">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section class="category-filter">
+        <table class="category-table">
+            <tr>
+                <td colspan="3">风格 <a href="main/all.html" class="all-link">全部></a></td>
+                <td class="empty-cell" colspan="3"></td>
+                <td colspan="3">地区 <a href="main/all.html" class="all-link">全部></a></td>
+                <td class="empty-cell" colspan="2"></td>
+                <td colspan="2">制作阵容 <a href="main/all.html" class="all-link">全部></a></td>
+            </tr>
+            <tr class="category-row">
+                <td class="narrow-cell"><button>动作</button></a></td>
+                <td class="narrow-cell"><button>喜剧</button></a></td>
+                <td class="narrow-cell"><button>恐怖</button></a></td>
+                <td class="empty-cell" colspan="3"></td>
+                <td class="narrow-cell"><a href="region/continent.html"><button>大陆</button></a></td>
+                <td class="narrow-cell"><button>港台</button></a></td>
+                <td class="narrow-cell"><a href="region/Western%20countries.html"><button>欧美</button></a></td>
+                <td class="empty-cell" colspan="2"></td>
+                <td class="narrow-cell"><a href="Make%20a%20lineup/director.html"><button>导演</button></a></td>
+                <td class="narrow-cell"><a href="Make%20a%20lineup/cast.html"><button>参演人员</button></a></td>
+            </tr>
+            <tr class="category-row">
+                <td class="narrow-cell"><button>爱情</button></a></td>
+                <td class="narrow-cell"><a href="classify/sci-fi.html"><button>科幻</button></a></td>
+                <td class="narrow-cell"><a href="classify/drama.html"><button>剧情</button></a></td>
+                <td class="empty-cell" colspan="3"></td>
+                <td class="narrow-cell"><button>日本</button></a></td>
+                <td class="narrow-cell"><button>韩国</button></a></td>
+                <td class="narrow-cell"><button>印度</button></a></td>
+                <td class="empty-cell" colspan="2"></td>
+                <td class="narrow-cell"><a href="Make%20a%20lineup/screenwriter.html"><button>编剧</button></a></td>
+                <td class="narrow-cell"><a href="Make%20a%20lineup/prod_company.html"><button>出品公司</button></a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="recommended-movies">
+        <h2>推荐电影</h2>
+        <div class="movie-list">
+            <div class="movie-card" onclick="window.location.href='main/wait.html'">
+                <img src="main/yonggandexin.jpg" alt="勇敢的心">
+                <p>勇敢的心</p>
+            </div>
+            <div class="movie-card" onclick="window.location.href='main/wait.html'">
+                <img src="main/The_Shawshank_Redemption.png" alt="The_Shawshank_Redemption">
+                <p>肖申克的救赎</p>
+            </div>
+            <div class="movie-card" onclick="window.location.href='main/wait.html'">
+                <img src="people/picture/juedoushi.webp" alt="Chinchilla">
+                <p>角斗士</p>
+            </div>
+            <!-- 添加更多电影卡片 -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 光影解说. 保留所有权利.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true, // 设置为 true 以允许自动循环
+        autoplay: {
+            delay: 3000, // 每3秒切换一次
+            disableOnInteraction: false, // 用户操作后继续自动播放
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 手动控制
+    document.querySelector('.swiper-button-next').addEventListener('click', () => {
+        swiper.slideNext(); // 下一张
+    });
+
+    document.querySelector('.swiper-button-prev').addEventListener('click', () => {
+        swiper.slidePrev(); // 上一张
+    });
+
+</script>
+</body>
+</html>
